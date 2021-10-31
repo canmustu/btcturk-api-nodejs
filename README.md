@@ -1,4 +1,4 @@
-[![Btcturk - Btcturk Node.js API](https://img.shields.io/badge/Btcturk-Btcturk_Node.js_API-3B82F6)](https://) ![](https://githubbadges.com/star.svg?user=hasanmuzak&repo=btcturk-api-nodejs&background=059669&color=fff&style=flat) ![](https://img.shields.io/bundlephobia/minzip/btcturk-api-nodejs?color=34D399) ![](https://img.shields.io/bundlephobia/min/btcturk-api-nodejs?color=34D399) [![Tests - Passed](https://img.shields.io/badge/Tests-Passed-2ea44f)](https://)
+[![Btcturk - Btcturk Node.js API](https://img.shields.io/badge/Btcturk-Btcturk_Node.js_API-3B82F6)](https://) ![](https://githubbadges.com/star.svg?user=hasanmuzak&repo=btcturk-api&background=059669&color=fff&style=flat) ![](https://img.shields.io/bundlephobia/minzip/btcturk-api?color=34D399) ![](https://img.shields.io/bundlephobia/min/btcturk-api?color=34D399) [![Tests - Passed](https://img.shields.io/badge/Tests-Passed-2ea44f)](https://)
 
 ### Btcturk Unofficial API powered by NodeJS
 This project developed based on [Btcturk](https://docs.btcturk.com/ "Btcturk")'s official api documentation.
@@ -10,7 +10,7 @@ This project developed based on [Btcturk](https://docs.btcturk.com/ "Btcturk")'s
 Install module by running following command;
 
 ```
-npm install btcturk-api-nodejs
+npm install btcturk-api
 ```
 
 Be sure of that you have API access. You should create an API key from https://pro.btcturk.com. (Login -> Account -> Api Access)
@@ -18,7 +18,7 @@ Be sure of that you have API access. You should create an API key from https://p
 If you have an API & Private key, you can start sending requests.
 
 ```
-const { Btcturk } = require('btcturk-api-nodejs');
+const { Btcturk } = require('btcturk-api');
 
 const btcturk = new Btcturk(`Your API Key`, `Your Private Key`)
 ```
@@ -26,7 +26,7 @@ const btcturk = new Btcturk(`Your API Key`, `Your Private Key`)
 Here are some examples;
 
 ```
-const { Btcturk } = require('btcturk-api-nodejs');
+const { Btcturk } = require('btcturk-api');
 const btcturk = new Btcturk(`Your API Key`, `Your Private Key`)
 
 btcturk.getTicker("BTC_USDT").then(response => {

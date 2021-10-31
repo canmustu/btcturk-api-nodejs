@@ -1,11 +1,13 @@
 {
-  "name": "btcturk-api-nodejs",
+  "name": "btcturk-api",
   "version": "1.0.0",
-  "description": "Promise based API",
-  "main": "index.js",
+  "description": "Btcturk | Promise based API (Unofficial)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.ts'",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,9 @@
   "dependencies": {
     "axios": "^0.24.0",
     "crypto-js": "^4.1.1"
-  }
+  },
+  "keywords": [
+    "btcturk",
+    "api"
+  ]
 }
