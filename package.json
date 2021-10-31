@@ -1,10 +1,11 @@
 {
-  "name": "btcturk-api",
-  "version": "1.0.1",
+  "name": "btcturk-js",
+  "version": "1.0.0",
   "description": "Btcturk | Promise based API (Unofficial)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.ts'",
     "build": "tsc"
   },
