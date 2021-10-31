@@ -7,6 +7,12 @@ This project developed based on [Btcturk](https://docs.btcturk.com/ "Btcturk")'s
 - Axios has used to send requests
 
 ### Usage
+Install module by running following command;
+
+```
+npm install btcturk-api-nodejs
+```
+
 Be sure of that you have API access. So you should create an API key from https://pro.btcturk.com. (Login -> Account -> Api Access)
 
 If you have an API & Private key, you can start sending requests.
