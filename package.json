@@ -1,6 +1,6 @@
 {
   "name": "btcturk-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Btcturk | Promise based API (Unofficial)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -63,6 +63,34 @@ If response returns 200;
 }
 ```
 
+
+```
+const { Btcturk } = require('btcturk-js');
+const btcturk = new Btcturk(`Your API Key`, `Your Private Key`)
+
+btcturk.getUserTransactions(["buy", "sell"], ["usdt"], 1616401320844, new Date().getTime()).then(response => {
+    console.log(response.data);
+})
+```
+
+If response code is 200, response will be like below;
+```
+{
+  data: [
+    {
+      price: '8.231',
+      numeratorSymbol: 'USDT',
+      denominatorSymbol: 'TRY',
+      orderType: 'sell',
+      timestamp: 1617462292527,
+      amount: '-139.10',
+      fee: '-1.74650232',
+      tax: '-0.31437042',
+      ...
+    }
+    ...
+```
+
 Please check param types and available formats from https://docs.btcturk.com.
 
 All methods are promise based, so after calling a class method, dont forget to use `.then` and `.catch` blocks to handle data || error.
